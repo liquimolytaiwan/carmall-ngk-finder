@@ -1,0 +1,66 @@
+name: refresh-data
+
+# Price/stock move often, so re-fetch the CarMall products daily and rebuild data.json.
+# The NGK fitment table changes rarely and costs ~420 rate-limited requests (~8 min),
+# so re-crawl it weekly (Mon) or on demand.
+on:
+  schedule:
+    - cron: "0 22 * * *"      # 06:00 Taiwan — price/stock only
+    - cron: "0 4 * * *"       # 12:00 Taiwan — price/stock only
+    - cron: "30 20 * * 1"     # 04:30 Taiwan, Monday — also re-crawl NGK
+  workflow_dispatch:
+    inputs:
+      recrawl_ngk:
+        description: "同時重抓 NGK 適應表（約 8 分鐘）"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Re-crawl NGK fitment table (weekly / on demand)
+        if: github.event.inputs.recrawl_ngk == 'true' || github.event.schedule == '30 20 * * 1'
+        run: python tools/fetch_ngk.py --cartype 2 --out tools/ngk_raw_moto.json
+
+      - name: Refresh CarMall prices and stock
+        run: python tools/fetch_products.py
+
+      - name: Rebuild data.json
+        run: python tools/build_data.py
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json tools/ngk_products.json tools/ngk_raw_moto.json
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "chore: refresh NGK plug price/stock data"
+          # A scheduled run and a manual run can overlap; whoever pushes second would be
+          # rejected non-fast-forward and show a false red. Rebase and retry instead.
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "pushed on attempt $i"
+              exit 0
+            fi
+            echo "push rejected, rebasing (attempt $i)"
+            sleep $((i * 5))
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+          done
+          echo "push failed after 5 attempts" >&2
+          exit 1

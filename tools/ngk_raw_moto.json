@@ -1,0 +1,3576 @@
+{
+ "source": "https://ngksparkplugs.com.tw/product/plugs/finder",
+ "cartypes": {
+  "2": [
+   {
+    "id": 65,
+    "cartype": 2,
+    "name_en": "BMW",
+    "name_tw": "寶馬",
+    "parts_count": 6,
+    "entries": [
+     {
+      "model": "M1000RR",
+      "displacement": "999",
+      "year": "2021-",
+      "recommend": "LMAR9FI-10G",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9FI-10G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       },
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9FI-10G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "S1000RR",
+      "displacement": "999",
+      "year": "2009-2021",
+      "recommend": "LMAR9D-J",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9D-J",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       },
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9D-J",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "S1000RR",
+      "displacement": "999",
+      "year": "2021-",
+      "recommend": "LMAR9FI-10G",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9FI-10G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       },
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9FI-10G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "S1000RR HP4",
+      "displacement": "999",
+      "year": "2012-2016",
+      "recommend": "LMAR9D-J",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9D-J",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       },
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9D-J",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "S1000XR",
+      "displacement": "999",
+      "year": "2015-2020",
+      "recommend": "LMAR9D-J",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9D-J",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       },
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9D-J",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "S1000XR",
+      "displacement": "999",
+      "year": "2021-",
+      "recommend": "LMAR9FI-10G",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9FI-10G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       },
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9FI-10G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": 48,
+    "cartype": 2,
+    "name_en": "Hartford",
+    "name_tw": "哈特佛",
+    "parts_count": 1,
+    "entries": [
+     {
+      "model": "VR200",
+      "displacement": "200",
+      "year": "-----",
+      "recommend": "DR8EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "DR8EA",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "DR8EGP",
+        "IX銥合金火星塞": "DR8EIX",
+        "支數": "1"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": 62,
+    "cartype": 2,
+    "name_en": "HONDA",
+    "name_tw": "本田",
+    "parts_count": 4,
+    "entries": [
+     {
+      "model": "CB300R",
+      "displacement": "300",
+      "year": "2018-",
+      "recommend": "SIMR8A9",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "SIMR8A9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       },
+       {
+        "引擎": "",
+        "原廠火星塞": "SIMR8A9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "SH 125",
+      "displacement": "125",
+      "year": "2017-2019",
+      "recommend": "MR7G-9E",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "MR7G-9E",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "SH 150",
+      "displacement": "150",
+      "year": "2017-2019",
+      "recommend": "MR7G-9E, MR7G-9E",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "MR7G-9E",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       },
+       {
+        "引擎": "",
+        "原廠火星塞": "MR7G-9E",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": 58,
+    "cartype": 2,
+    "name_en": "KAWASAKI",
+    "name_tw": "川崎",
+    "parts_count": 42,
+    "entries": [
+     {
+      "model": "1400GTR",
+      "displacement": "1400",
+      "year": "2008~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "ER-6f/n",
+      "displacement": "600",
+      "year": "2006~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "NINJA 250SL",
+      "displacement": "250",
+      "year": "2015.04~",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "MR8CI-8",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "NINJA 400",
+      "displacement": "400",
+      "year": "2018.02~",
+      "recommend": "LMAR9G",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "Ninja 1000/ABS",
+      "displacement": "1000",
+      "year": "2011~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Ninja 250",
+      "displacement": "250",
+      "year": "2013.02~2018.02",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "Ninja 250",
+      "displacement": "250",
+      "year": "2018.02~",
+      "recommend": "SILMAR9B9",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "SILMAR9B9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "Ninja 250R",
+      "displacement": "250",
+      "year": "2008.04~",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "Ninja 400/R",
+      "displacement": "400",
+      "year": "2010.08~2018.02",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "Ninja 6R",
+      "displacement": "600",
+      "year": "2000~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9E",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "CR9EGP",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Ninja H2 SX/SX SE",
+      "displacement": "1000",
+      "year": "2018.03~",
+      "recommend": "SILMAR9E9",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "SILMAR9E9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Ninja H2/H2R",
+      "displacement": "1000",
+      "year": "2015~",
+      "recommend": "SILMAR9B9",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "SILMAR9B9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Ninja ZX-10R",
+      "displacement": "1000",
+      "year": "2004~2015",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Ninja ZX-10R",
+      "displacement": "1000",
+      "year": "2016.10~",
+      "recommend": "SILMAR9B9",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "SILMAR9B9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Ninja ZX-10R KRT EDITION",
+      "displacement": "1000",
+      "year": "2016~",
+      "recommend": "SILMAR9B9",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "SILMAR9B9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Ninja ZX-12R",
+      "displacement": "1200",
+      "year": "2000~",
+      "recommend": "CR9EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EKPA",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Ninja ZX-14R",
+      "displacement": "1400",
+      "year": "2011~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "VERSYS1000",
+      "displacement": "1000",
+      "year": "2011~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "W400",
+      "displacement": "400",
+      "year": "2006.02~",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "Z1000",
+      "displacement": "1000",
+      "year": "2003~2006",
+      "recommend": "CR9EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EK",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Z1000",
+      "displacement": "1000",
+      "year": "2007~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Z1000A",
+      "displacement": "1000",
+      "year": "1976~",
+      "recommend": "BR8EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "B8ES",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "BR8EGP",
+        "IX銥合金火星塞": "BR8EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Z1000H",
+      "displacement": "1000",
+      "year": "1980~",
+      "recommend": "BR8EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "B8ES",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "BR8EGP",
+        "IX銥合金火星塞": "BR8EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Z1000J",
+      "displacement": "1000",
+      "year": "1981~",
+      "recommend": "BR8EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "B8ES",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "BR8EGP",
+        "IX銥合金火星塞": "BR8EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Z1000MKⅡ",
+      "displacement": "1000",
+      "year": "1979~",
+      "recommend": "BR8EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "B8ES",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "BR8EGP",
+        "IX銥合金火星塞": "BR8EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Z1000R",
+      "displacement": "1000",
+      "year": "1982~",
+      "recommend": "BR8EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "B8ES",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "BR8EGP",
+        "IX銥合金火星塞": "BR8EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Z125PRO",
+      "displacement": "125",
+      "year": "2016.04",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Z1R",
+      "displacement": "1000",
+      "year": "1978~",
+      "recommend": "BR8EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "B8ES",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "BR8EGP",
+        "IX銥合金火星塞": "BR8EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Z1RⅡ",
+      "displacement": "1000",
+      "year": "1980~",
+      "recommend": "BR8EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "B8ES",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "BR8EGP",
+        "IX銥合金火星塞": "BR8EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Z250",
+      "displacement": "250",
+      "year": "2019.03~",
+      "recommend": "SILMAR9B9",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "SILMAR9B9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Z400",
+      "displacement": "400",
+      "year": "2019.02~",
+      "recommend": "LMAR9G",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "Z900",
+      "displacement": "900",
+      "year": "2018.04~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Z900RS/CAFE",
+      "displacement": "900",
+      "year": "2017.12~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "ZRX1200R/S",
+      "displacement": "1200",
+      "year": "2001~",
+      "recommend": "CR9EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EK",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "ZX-10",
+      "displacement": "1000",
+      "year": "1988~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9E",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "CR9EGP",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "ZX-25R",
+      "displacement": "250",
+      "year": "2020~",
+      "recommend": "LMAR9G",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR9G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "ZX-6R",
+      "displacement": "600",
+      "year": "1995~2001",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9E",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "CR9EGP",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "ZX-6R",
+      "displacement": "600",
+      "year": "2007~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9E",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "CR9EGP",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "ZX-6R",
+      "displacement": "636",
+      "year": "2002~2006",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9E",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "CR9EGP",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "ZX-6RR",
+      "displacement": "600",
+      "year": "2003~2005",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9E",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "CR9EGP",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "ZZ-R1200",
+      "displacement": "1200",
+      "year": "2002~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9E",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "CR9EGP",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "ZZ-R1400",
+      "displacement": "1400",
+      "year": "2006~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": 43,
+    "cartype": 2,
+    "name_en": "KYMCO",
+    "name_tw": "光陽",
+    "parts_count": 62,
+    "entries": [
+     {
+      "model": "Ak550",
+      "displacement": "550",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "CUE 100 (七期)",
+      "displacement": "100",
+      "year": "2021~",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "SN20EJ(SN20B)",
+        "原廠火星塞": "CR7HSA",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "CR7HGP",
+        "IX銥合金火星塞": "CR7HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "CUE 100 (六期)",
+      "displacement": "100",
+      "year": "2019.11~",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "SN20EF(SN20)",
+        "原廠火星塞": "CR7HSA",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "CR7HGP",
+        "IX銥合金火星塞": "CR7HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Down Town 350 TCS",
+      "displacement": "350",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "G-DINK 300",
+      "displacement": "300",
+      "year": "-----",
+      "recommend": "DPR6EA-9",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "DPR6EA-9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "G6 150",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "G6 150 ABS",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "G6 150 Brembo",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "GP 125 (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "GP 125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "GP 125 ABS (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "GP 125 ABS",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Gsense 125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Krider 400 (雙缸)",
+      "displacement": "400",
+      "year": "-----",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "LIKE 125 (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "LIKE 125 ABS (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "LIKE COLOMBO 150 (七期)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Like 125 (2020仕樣)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Like 125 ABS (2020仕樣)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Like 150 (七期)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Like 150",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "MANY 110 (七期)",
+      "displacement": "110",
+      "year": "2021~",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "SE22BP SE22BR SE22BS(SE22)",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "MANY 110 (七期)",
+      "displacement": "115",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "MANY 110 (六期)",
+      "displacement": "110",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "MANY 110 (六期)",
+      "displacement": "110",
+      "year": "2021.10~",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "SE24BK SE24BL SE24BM(SE22)",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Many 110 (六期)",
+      "displacement": "110",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Many 110 (六期)",
+      "displacement": "110",
+      "year": "2021.10~",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "SE24BK SE24BL SE24BM(SE22)",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Many 110 水鑽版 (六期)",
+      "displacement": "110",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "NEW MANY 110 (六期)",
+      "displacement": "110",
+      "year": "2021.11~",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "SE22CA SE22CB SE22CC(SE22)",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "NEW MANY 125 (六期)",
+      "displacement": "125",
+      "year": "2021.11~",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "SE24CD SE24CE SE24CF(SE24A)",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "NEW Many 125 (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "NICE 100 (七期)",
+      "displacement": "100",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7HSA",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "CR7HGP",
+        "IX銥合金火星塞": "CR7HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "NICE 100 (六期)",
+      "displacement": "100",
+      "year": "2021.12~",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "SN20PB SN20PC(SN20)",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "NICE 100 (六期)",
+      "displacement": "110",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "NICE XL",
+      "displacement": "115",
+      "year": "2022-",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "SN23AC(SN23A)",
+        "原廠火星塞": "CR7HSA",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "CR7HGP",
+        "IX銥合金火星塞": "CR7HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "New Many 125 LED版",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Nikita 300",
+      "displacement": "300",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "RACING KING 180",
+      "displacement": "180",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "RACING KING 180 ABS",
+      "displacement": "180",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "RACING S 150 (七期)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Racing S 125 ABS (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Racing S 125 ABS",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Racing S 125 ABS(2020仕樣)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Racing S 150 (2020年仕樣)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Racing S 150 ABS特仕版 (2020 仕樣)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "VJR 125 (2020仕樣)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "VJR 125 ABS (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "VP125 abs 七期",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "X SENSE 125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "X-SENSE 150",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "XCITING S 400 TCS",
+      "displacement": "400",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Xsense 125(七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "勁多利150 (Hercules)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "新名流 125 (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "新名流 125 ABS(2020仕樣)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "新名流 125 ABS(七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "新名流 125(2020仕樣)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "新名流 150",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "新名流150 (七期)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "超級金牌 150 (七期)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7HSA",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "CR7HGP",
+        "IX銥合金火星塞": "CR7HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "超級金牌 150",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "跑酷 125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "金牌125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "金牌125(七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": 49,
+    "cartype": 2,
+    "name_en": "PGO",
+    "name_tw": "摩特動力",
+    "parts_count": 1,
+    "entries": [
+     {
+      "model": "X-HOT",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": 51,
+    "cartype": 2,
+    "name_en": "SUZUKI",
+    "name_tw": "鈴木",
+    "parts_count": 20,
+    "entries": [
+     {
+      "model": "AddressV 125 SS",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "AddressV 125G",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "B-KING",
+      "displacement": "1300",
+      "year": "2008~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "Burgman 200",
+      "displacement": "200",
+      "year": "-----",
+      "recommend": "CR7EKB",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR7EKB",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "GSR125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "GSX-R150",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "MR8E-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "GSX-S150",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "MR8E-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "GSX1100SKATANA",
+      "displacement": "1100",
+      "year": "1981~2000.3",
+      "recommend": "DR8EIX",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "DR8EA",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "DR8EGP",
+        "IX銥合金火星塞": "DR8EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "GSX1100SKATANA",
+      "displacement": "1100",
+      "year": "2019~",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "GSX1250F",
+      "displacement": "1250",
+      "year": "2010~",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR7E",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "GSX1300R隼",
+      "displacement": "1300",
+      "year": "1999.07~2007.06",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9E",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "CR9EGP",
+        "IX銥合金火星塞": "CR9EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "GSX1300R隼",
+      "displacement": "1300",
+      "year": "2007.07~2013",
+      "recommend": "CR9EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR9EIA-9",
+        "MOTO DX釕合金火星塞": "CR9EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "GSX1300R隼",
+      "displacement": "1300",
+      "year": "2014.02",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR8EIA-9",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "GSX1400",
+      "displacement": "1400",
+      "year": "2001.03~2008",
+      "recommend": "",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR8EK",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "4"
+       }
+      ]
+     },
+     {
+      "model": "MUSIC125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "NEX",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "New Nex",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Saluto",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Swish 125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "address 110",
+      "displacement": "110",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": 45,
+    "cartype": 2,
+    "name_en": "SYM",
+    "name_tw": "三陽",
+    "parts_count": 41,
+    "entries": [
+     {
+      "model": "4MICA (七期)",
+      "displacement": "125",
+      "year": "2021-",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "6代 Fighter (雙碟煞)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "6代 Fighter ABS ",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "CRUiSYM",
+      "displacement": "280",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "DRG BT",
+      "displacement": "158",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "FNX BT",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "FNX BT(七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Fiddle 125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Fiddle Lt 110 (七期)",
+      "displacement": "110",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "JET S ",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "JET S (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "JET SL(七期 ABS CBS)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "JET SR ",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "JET SR (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "JET SR(七期 ABS CBS)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Joymax z",
+      "displacement": "280",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "MAXSYM 600i ABS",
+      "displacement": "600",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Maxsym TL ",
+      "displacement": "465",
+      "year": "-----",
+      "recommend": "CPR7EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR7EA-9",
+        "MOTO DX釕合金火星塞": "CPR7EDX-9S",
+        "G-POWER白金火星塞": "CPR7EAGP-9",
+        "IX銥合金火星塞": "CPR7EAIX-9",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "RV 180 EURO (碟煞/鼓煞)",
+      "displacement": "180",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Vega (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Vivo (碟煞/鼓煞) (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Vivo (碟煞/鼓煞)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "WOO ",
+      "displacement": "100",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7HSA",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "CR7HGP",
+        "IX銥合金火星塞": "CR7HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "WOO (七期)",
+      "displacement": "100",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "WOO 115",
+      "displacement": "115",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7HSA",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "CR7HGP",
+        "IX銥合金火星塞": "CR7HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "WOO 115(七期)",
+      "displacement": "115",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Z1 125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Z1 attila (碟煞/鼓煞)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Z1 attila s (碟煞) (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "全新迪爵DUKE 125 (碟煞/鼓煞)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "全新迪爵DUKE 125 (碟煞/鼓煞)(七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "野狼",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "DPR7EIX-9",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "DPR7EA-9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "DPR7EIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "野狼SB300 ",
+      "displacement": "280",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "野狼SB300CR ABS (雙碟煞)",
+      "displacement": "280",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "野狼T2 ABS",
+      "displacement": "250",
+      "year": "-----",
+      "recommend": "CR8EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR8E",
+        "MOTO DX釕合金火星塞": "CR8EDX-S",
+        "G-POWER白金火星塞": "CR8EGP",
+        "IX銥合金火星塞": "CR8EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "野狼傳奇",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "DPR7EIX-9",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "DPR7EA-9",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "DPR7EIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "金發財 (碟煞/鼓煞)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "金發財 (碟煞/鼓煞)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "金發財 (碟煞/鼓煞)(七期)",
+      "displacement": "150",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "金發財 ABS (碟煞/鼓煞)(七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LR7D",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "風動125",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR7HSA",
+        "MOTO DX釕合金火星塞": "CR7HDX-S",
+        "G-POWER白金火星塞": "CR7HGP",
+        "IX銥合金火星塞": "CR7HIX",
+        "支數": "1"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": 44,
+    "cartype": 2,
+    "name_en": "YAMAHA",
+    "name_tw": "山葉",
+    "parts_count": 36,
+    "entries": [
+     {
+      "model": "Axis Z 勁豪",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Axis Z(碟煞)(七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Axis Zii(股煞)(七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "BW’ SR",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "U22ESR-N (DENSO)",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "BW’S(七期)",
+      "displacement": "155",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "CUXi IS",
+      "displacement": "115",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "CUXi 碟煞",
+      "displacement": "115",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Cygnus-GRYPHUS ABS",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Cygnus-GRYPHUS UBS",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Cygnus-X ",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "U22ESR-N (DENSO)",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Cygnus-X ABS",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR7EDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "U22ESR-N (DENSO)",
+        "MOTO DX釕合金火星塞": "CR7EDX-S",
+        "G-POWER白金火星塞": "CR7EGP",
+        "IX銥合金火星塞": "CR7EIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Force",
+      "displacement": "155",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "JOG (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "JOG SWEET",
+      "displacement": "115",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "LIMI",
+      "displacement": "115",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "LIMI 豪華",
+      "displacement": "115",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Limi (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "MT-03 ",
+      "displacement": "325",
+      "year": "-----",
+      "recommend": "LMAR8ADX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LMAR8A-9",
+        "MOTO DX釕合金火星塞": "LMAR8ADX-9S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "MT-07 ABS",
+      "displacement": "700",
+      "year": "-----",
+      "recommend": "LMAR8ADX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LMAR8A-9",
+        "MOTO DX釕合金火星塞": "LMAR8ADX-9S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "MT-09 ABS",
+      "displacement": "850",
+      "year": "-----",
+      "recommend": "CPR9EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR9EA-9",
+        "MOTO DX釕合金火星塞": "CPR9EDX-9S",
+        "G-POWER白金火星塞": "CPR9EAGP-9",
+        "IX銥合金火星塞": "CPR9EAIX-9",
+        "支數": "3"
+       }
+      ]
+     },
+     {
+      "model": "N-MAX",
+      "displacement": "155",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "NMAX ABS",
+      "displacement": "155",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "R3 ABS",
+      "displacement": "300",
+      "year": "-----",
+      "recommend": "LMAR8ADX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LMAR8A-9",
+        "MOTO DX釕合金火星塞": "LMAR8ADX-9S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "Rs Neo ",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Rs Neo (七期)",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "SMAX ABS",
+      "displacement": "155",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "T-MAX ",
+      "displacement": "560",
+      "year": "-----",
+      "recommend": "LMAR7G",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LMAR7G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "T-MAX DX",
+      "displacement": "560",
+      "year": "-----",
+      "recommend": "LMAR7G",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LMAR7G",
+        "MOTO DX釕合金火星塞": "",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "TRICITY 155 ABS",
+      "displacement": "155",
+      "year": "-----",
+      "recommend": "CPR8EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR8EA-9",
+        "MOTO DX釕合金火星塞": "CPR8EDX-9S",
+        "G-POWER白金火星塞": "CPR8EAGP-9",
+        "IX銥合金火星塞": "CPR8EAIX-9",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "TRICITY 300",
+      "displacement": "292",
+      "year": "-----",
+      "recommend": "LMAR8ADX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR8A-9",
+        "MOTO DX釕合金火星塞": "LMAR8ADX-9S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Tracer 900 GT",
+      "displacement": "847",
+      "year": "-----",
+      "recommend": "CPR9EDX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "CPR9EA-9",
+        "MOTO DX釕合金火星塞": "CPR9EDX-9S",
+        "G-POWER白金火星塞": "CPR9EAGP-9",
+        "IX銥合金火星塞": "CPR9EAIX-9",
+        "支數": "3"
+       }
+      ]
+     },
+     {
+      "model": "Vinoora",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "Vinoora M",
+      "displacement": "125",
+      "year": "-----",
+      "recommend": "CR6HDX-S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "CR6HSA",
+        "MOTO DX釕合金火星塞": "CR6HDX-S",
+        "G-POWER白金火星塞": "CR6HGP",
+        "IX銥合金火星塞": "CR6HIX",
+        "支數": "1"
+       }
+      ]
+     },
+     {
+      "model": "XMAX ABS",
+      "displacement": "292",
+      "year": "-----",
+      "recommend": "LMAR8ADX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LMAR8A-9",
+        "MOTO DX釕合金火星塞": "LMAR8ADX-9S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "XSR 700",
+      "displacement": "689",
+      "year": "-----",
+      "recommend": "LMAR8ADX-9S",
+      "rows": [
+       {
+        "引擎": "-----",
+        "原廠火星塞": "LMAR8A-9",
+        "MOTO DX釕合金火星塞": "LMAR8ADX-9S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     },
+     {
+      "model": "YZF-R7",
+      "displacement": "700",
+      "year": "2022-",
+      "recommend": "LMAR8ADX-9S",
+      "rows": [
+       {
+        "引擎": "",
+        "原廠火星塞": "LMAR8A-9",
+        "MOTO DX釕合金火星塞": "LMAR8ADX-9S",
+        "G-POWER白金火星塞": "",
+        "IX銥合金火星塞": "",
+        "支數": "2"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

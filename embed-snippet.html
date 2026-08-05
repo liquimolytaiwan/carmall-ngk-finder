@@ -1,0 +1,22 @@
+<!-- ===== CarMall 火星塞快速查詢 — 貼進 Cyberbiz 頁面的 HTML 區塊 ===== -->
+<div id="carmall-plug-finder" style="max-width:720px;margin:0 auto;">
+  <iframe id="cmp-frame"
+    src="https://liquimolytaiwan.github.io/carmall-ngk-finder/"
+    style="width:100%;border:0;display:block;min-height:520px;"
+    title="火星塞快速查詢" loading="lazy" scrolling="no"></iframe>
+</div>
+<script>
+(function () {
+  var ORIGIN = "https://liquimolytaiwan.github.io";
+  window.addEventListener("message", function (e) {
+    var f = document.getElementById("cmp-frame");
+    // Only the finder iframe may resize itself. Without these checks any other frame
+    // or opened window on the page could post a height and distort the storefront.
+    if (!f || e.origin !== ORIGIN || e.source !== f.contentWindow) return;
+    if (!e.data || e.data.type !== "carmallPlugHeight") return;
+    var h = Number(e.data.height);
+    if (h > 0 && h < 5000) f.style.height = (h + 8) + "px";
+  });
+})();
+</script>
+<!-- ===== 結束 ===== -->

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>火星塞快速查詢 | CarMall</title>
+<meta name="description" content="選擇機車廠牌與車款，立即查到 NGK 原廠與 MotoDX 釕合金火星塞規格並直接購買" />
+<link rel="preconnect" href="https://www.carmall.com.tw" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="pf" id="pf">
+  <header class="pf-head">
+    <h1 class="pf-title">火星塞快速查詢</h1>
+    <p class="pf-sub">選擇您的機車廠牌與車款，立即查到對應的 NGK 火星塞規格並一鍵購買</p>
+  </header>
+
+  <div class="pf-steps">
+    <label class="pf-field">
+      <span class="pf-label"><i>1</i> 廠牌</span>
+      <span class="pf-select">
+        <select id="sel-brand" aria-label="選擇機車廠牌">
+          <option value="">請選擇廠牌</option>
+        </select>
+      </span>
+    </label>
+
+    <label class="pf-field">
+      <span class="pf-label"><i>2</i> 車款 / 排氣量</span>
+      <span class="pf-select">
+        <select id="sel-model" aria-label="選擇車款" disabled>
+          <option value="">請先選擇廠牌</option>
+        </select>
+      </span>
+    </label>
+
+    <label class="pf-field" id="field-year" hidden>
+      <span class="pf-label"><i>3</i> 年份</span>
+      <span class="pf-select">
+        <select id="sel-year" aria-label="選擇年份">
+          <option value="">請選擇年份</option>
+        </select>
+      </span>
+    </label>
+  </div>
+
+  <div id="result" class="pf-result" hidden></div>
+
+  <p class="pf-foot">
+    適用資料來源：NGK 台灣官方火星塞適應表。本對照資訊僅供參考，安裝前請再次參照車主手冊確認。<br>
+    價格與庫存每日同步，實際成交以商品頁面為準。
+  </p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
