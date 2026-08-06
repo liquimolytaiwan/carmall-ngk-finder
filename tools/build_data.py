@@ -89,6 +89,62 @@ TW_SAME_AS_CATALOG = {
 # sheet CarMall sent stays byte-identical to what they can re-send.
 TW_TABLE_FIXES = {("YAMAHA", "YZK-R7"): "YZF-R7"}
 
+# Rows where the spreadsheet's grouping put a bike under the wrong part number.
+# Checked against NGK Taiwan's live finder, which answers per engine code rather than
+# per group, so it can be told apart from a mere naming difference.
+# Both the OEM and the DX part are replaced together: correcting only the DX would print
+# a spec table pairing one engine's stock plug with another engine's upgrade.
+TW_TABLE_ROW_FIXES = {
+    # The sheet lists NEW MANY 125(六期) in the CPR7EDX-9S block, directly under
+    # NEW MANY 110. NGK Taiwan gives the 125 engine SE24CD/CE/CF (SE24A) → CR8E →
+    # CR8EDX-S, and the 110 engine SE22CA/CB/CC (SE22) → CPR7EA-9 → CPR7EDX-9S: two
+    # different engine families that the sheet's row order merged. Both sources also
+    # agree NEW MANY 125 七期 is CR8E, and CPR7EA-9 → CR8E across an emissions step
+    # would be backwards — every other KYMCO in the table moves CR → CPR, never back.
+    ("KYMCO", "NEW MANY 125(六期)"): {"oem": "CR8E", "dx": "CR8EDX-S"},
+}
+
+# How many plugs each bike takes, for the Taiwan sheets — which list a part number but
+# never a quantity. Every entry here is sourced, because a wrong count quotes a wrong
+# total and lets someone order half a set:
+#   • "NGK" — NGK Taiwan's own finder lists this bike (or the same bike under its other
+#     Taiwan name) with that 支數.
+#   • "spec" — the manufacturer's published engine specification, for bikes NGK Taiwan
+#     has no entry for at all.
+# A model that is not listed here keeps count = None and the front end asks the customer
+# to check their cylinder count rather than printing a guess.
+TW_TABLE_CYLINDERS = {
+    ("KYMCO", "CUE100"): 1,             # NGK: CUE 100 六期/七期
+    ("KYMCO", "CV3"): 2,                # spec: 550.4cc 並列雙缸 (AK550 engine)
+    ("KYMCO", "DTX 360"): 1,            # spec: 320.6cc 水冷單缸
+    ("KYMCO", "KRV 180"): 1,            # spec: 175.1cc SOHC 4V 單缸水冷
+    ("KYMCO", "LIKE COLOMBO 150"): 1,   # NGK: LIKE COLOMBO 150 (七期)
+    ("KYMCO", "NEW MANY 110"): 1,       # NGK: NEW MANY 110 (六期)
+    ("KYMCO", "NICE110"): 1,            # NGK: NICE 100 (六期) @110cc
+    ("KYMCO", "NICE 100(七期)"): 1,      # NGK: NICE 100 (七期)
+    ("KYMCO", "RTS 125"): 1,            # spec: RTS 家族單缸
+    ("KYMCO", "RTS 165"): 1,            # spec: RTS R 165 164.5cc 側水冷 4V 單缸
+    ("KYMCO", "VP 125"): 1,             # NGK: VP125 abs 七期
+    ("KYMCO", "優格Yogurt 125"): 1,      # NGK: 同級 KYMCO 125 速可達皆 1 支
+    ("KYMCO", "大樂 Dollar 125"): 1,     # NGK: 同級 KYMCO 125 速可達皆 1 支
+    ("SYM", "4MICA"): 1,                # NGK: 4MICA (七期)
+    ("SYM", "DRG"): 1,                  # spec: 158cc 水冷單缸 SOHC 4V
+    ("SYM", "FIDDLE LT 110"): 1,        # NGK: Fiddle Lt 110 (七期)
+    ("SYM", "JET SL"): 1,               # NGK: JET SL(七期 ABS CBS)
+    ("SYM", "KRNBT"): 1,                # NGK: 同級 SYM 125 速可達皆 1 支
+    ("SYM", "MMBCU(黑曼巴)"): 1,          # NGK: 同 DRG 引擎家族，單缸
+    ("SYM", "Vega125"): 1,              # NGK: Vega (七期)
+    ("SYM", "WOO100"): 1,               # NGK: WOO / WOO (七期)
+    ("SYM", "WOO115"): 1,               # NGK: WOO 115(七期)
+    ("SYM", "活力125"): 1,               # NGK: 同級 SYM 125 速可達皆 1 支
+    ("SYM", "迪爵125"): 1,               # NGK: 全新迪爵DUKE 125
+    ("YAMAHA", "BWS(水冷引擎)"): 1,       # NGK: BW'S(七期) 155cc
+    ("YAMAHA", "BWSX"): 1,              # NGK: BW' SR 125cc
+    ("YAMAHA", "JOG 115"): 1,           # NGK: JOG SWEET 115cc
+    ("YAMAHA", "JOG 125"): 1,           # NGK: JOG (七期) 125cc
+    ("YAMAHA", "勁戰(水冷引擎)"): 1,       # NGK: Cygnus-GRYPHUS ABS/UBS 125cc
+}
+
 
 def norm(s):
     """Collapse whitespace; treat NGK's placeholder dashes as empty."""
@@ -400,14 +456,20 @@ def tw_table_models(rows, counts, products):
     for r in rows:
         brand = r["brand"]
         name = TW_TABLE_FIXES.get((brand, r["model"]), r["model"])
+        fix = TW_TABLE_ROW_FIXES.get((brand, r["model"]), {})
+        dx, oem = fix.get("dx", r["dx"]), fix.get("oem", r["oem"])
+        # NGK Taiwan's own listing first, then the sourced table above for the bikes
+        # NGK Taiwan has no entry for. Still None if neither states it.
         need = counts.get((brand, match_key(name)))
+        if need is None:
+            need = TW_TABLE_CYLINDERS.get((brand, r["model"]))
         entry = {"year": "", "year_from": None, "year_to": None, "notes": [],
-                 "engines": [{"engine": "", "oem": r["oem"], "dx": r["dx"],
+                 "engines": [{"engine": "", "oem": oem, "dx": dx,
                               "gp": "", "ix": "", "count": need}],
-                 "recommend": r["dx"]}
+                 "recommend": dx}
         by_brand[brand].append({
             "name": name, "name_ja": "", "cc": guess_cc(name), "src": "tw_table",
-            "entries": [attach_buys(entry, [r["dx"]], {r["dx"]: need}, products)]})
+            "entries": [attach_buys(entry, [dx], {dx: need}, products)]})
     return by_brand
 
 
