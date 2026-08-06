@@ -54,3 +54,10 @@ jobs:
           path: .
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # GitHub's Pages deployment queue backed up badly on 2026-08-06: the action's
+          # default 10-minute wait expired twice while the deployment itself went on to
+          # succeed server-side. That produces a red build for a deploy that actually
+          # shipped — which is worse than a slow one, because the next person reads the
+          # red and re-runs, or worse, stops trusting the signal.
+          timeout: 1200000
