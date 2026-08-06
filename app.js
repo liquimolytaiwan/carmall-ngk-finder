@@ -112,16 +112,15 @@
     postHeight();
   }
 
-  // Spec table: what NGK lists for this bike, across all its plug lines. Columns are
-  // built from what the row actually carries — the printed catalogue has no separate OEM
-  // or platinum column, and rendering them as a wall of "—" reads as missing data.
+  // Spec table: the customer's own plug and the MotoDX that replaces it, nothing else.
+  // The store only sells MotoDX, so listing NGK's iridium and platinum lines advertised
+  // parts that cannot be bought here. Columns are still built from what the row actually
+  // carries — a wall of "—" reads as missing data rather than as "not applicable".
   function specHtml(e) {
     var cols = [
       { th: "引擎", get: function (x) { return x.engine; } },
       { th: "原廠／標準", get: function (x) { return x.oem; } },
-      { th: "MotoDX 釕合金", get: function (x) { return x.dx; }, dx: true },
-      { th: "白金", get: function (x) { return x.gp; } },
-      { th: "銥合金", get: function (x) { return x.ix; } }
+      { th: "MotoDX 釕合金", get: function (x) { return x.dx; }, dx: true }
     ].filter(function (c) {
       return e.engines.some(function (x) { return c.get(x); });
     });

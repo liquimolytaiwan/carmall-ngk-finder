@@ -45,7 +45,9 @@ FIRST_PAGE, LAST_PAGE = 129, 200          # 二輪車: KAWASAKI … 外国車(�
 RE_PART = re.compile(r"^[A-Z0-9][A-Z0-9\-/.]*$")
 RE_STOCKNO = re.compile(r"^\d+$")
 RE_JP_BRAND = re.compile(r"^(\S+?)／([A-Z][A-Za-z0-9\- ]*)$")        # カワサキ／KAWASAKI
-RE_FG_BRAND = re.compile(r"^(\S+?)＜([A-Z0-9][A-Za-z0-9 .\-&]*)＞$")   # アプリリア＜APRILIA＞
+# アプリリア＜APRILIA＞ — the Japanese half may itself contain a space ("ガス ガス＜GAS
+# GAS＞"), so it is matched loosely; the fullwidth brackets appear nowhere but headers.
+RE_FG_BRAND = re.compile(r"^(.+?)＜([A-Z0-9][A-Za-z0-9 .\-&]*)＞$")
 
 # A parenthetical is a model year only if every token in it is a 2-digit year, optionally
 # apostrophed and optionally suffixed モデル/年式. Guards against frame-number ranges
@@ -227,8 +229,15 @@ def parse(pdf, first, last):
             texts = [t for _, t in r]
             # Brand headers must be matched before the noise filter: on the first page of
             # a brand the header shares a printed row with the footnote legend.
+            #
+            # Match the joined row as well as each word, because a brand whose Latin name
+            # contains a space is tokenised across two words — "ティーエムレーシング＜TM"
+            # + "RACING＞". Missing the header does not fail loudly; it silently files
+            # that brand's bikes under whichever brand came before it, which is how TM
+            # Racing's TM250/TM400 ended up listed as Titans.
             hit = False
-            for t in texts:
+            joined = " ".join(t for t in texts if t != "■")
+            for t in texts + [joined]:
                 m = RE_JP_BRAND.match(t)
                 if m and "■" in texts:
                     brand_ja, brand, brand_kind, cc = m.group(1), m.group(2).strip(), "jp", None

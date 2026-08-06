@@ -354,6 +354,11 @@ NAMES = {
     "ラプトール650": "Raptor 650",
     "V ラプトール650": "V-Raptor 650",
 
+    # ── GAS GAS ──────────────────────────────────────────────────────────────
+    # Filed under CAGIVA until the brand-header fix: "ガス ガス＜GAS GAS＞" has a space
+    # in the Japanese half too, so the header never matched.
+    "ハレー450 4T": "Halley 450 4T",
+
     # ── BIMOTA ───────────────────────────────────────────────────────────────
     "ベラリア600": "Bellaria 600",
     "YB-7 フォルゴーレ": "YB-7 Folgore",
@@ -389,7 +394,6 @@ UNMAPPED_ON_PURPOSE = {
     "カーロ50/Ⅱ": "KYMCO, 日規專屬車，拉丁名未確認",
     "アイブブ125": "PGO, 疑為 i-BUBU，未確認",
     "マイブブ125": "PGO, 疑為 My BUBU，未確認",
-    "ハレー450 4T": "CAGIVA, 拉丁名未確認",
     "クッチョロ": "CAGIVA, 疑為 Cucciolo，未確認",
 }
 

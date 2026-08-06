@@ -62,6 +62,26 @@ RE_GENERATION = re.compile(r"[三四五六七八]期|水冷|空冷|\d\s*[~～]\s
 
 SRC_TW = {"catalog": "原廠型錄", "tw_table": "台灣對照表", "tw": "台灣官網"}
 
+# Brands a Taiwanese customer could actually be riding. The Japanese catalogue carries
+# the whole world's lineup, including brands that never reached Taiwan and several that
+# no longer exist (Husaberg folded into Husqvarna in 2013, Vertemati and Malaguti are
+# long gone) — a picker full of them buries the brands people are here for.
+#
+# An allowlist rather than a blocklist: a new brand arriving in a future catalogue should
+# have to be considered, not appear on the shelf because nobody remembered to exclude it.
+# Brands with a Taiwan importer are listed even when they currently have no MotoDX model,
+# so they surface by themselves if NGK adds one.
+TW_MARKET_BRANDS = {
+    # 國產
+    "KYMCO", "SYM", "PGO", "Hartford",
+    # 日系
+    "HONDA", "YAMAHA", "SUZUKI", "KAWASAKI",
+    # 有台灣總代理的歐美韓系
+    "TRIUMPH", "APRILIA", "VESPA", "PIAGGIO", "BENELLI", "KTM", "HUSQVARNA",
+    "HYOSUNG", "DUCATI", "BMW", "HARLEY-DAVIDSON", "MV AGUSTA", "INDIAN",
+    "ROYAL ENFIELD", "MOTO GUZZI",
+}
+
 
 # Same bike, named too differently for match_key to see it. Each entry says which
 # catalogue model the Taiwan model is, so the catalogue's year-split answer wins instead
@@ -271,7 +291,6 @@ def merge_runs(entries):
         same = prev and (
             [x["dx"] for x in prev["engines"]] == [x["dx"] for x in e["engines"]]
             and [x["oem"] for x in prev["engines"]] == [x["oem"] for x in e["engines"]]
-            and [x["ix"] for x in prev["engines"]] == [x["ix"] for x in e["engines"]]
             and [x["count"] for x in prev["engines"]] == [x["count"] for x in e["engines"]]
             and prev["notes"] == e["notes"])
         pt, cf = month_index(prev["year_to"], end=True) if prev else None, month_index(e["year_from"])
@@ -336,8 +355,11 @@ def catalog_models(rows, products, closed):
             "year": year_label(r["year_from"], r["year_to"], r["year_raw"]),
             "year_from": r["year_from"], "year_to": r["year_to"],
             "notes": r["notes"],
+            # Only the customer's own plug and the MotoDX that replaces it: the store
+            # sells no iridium or platinum, so shipping those columns to the browser
+            # only grows the payload every visitor downloads.
             "engines": [{"engine": "", "oem": r["std"], "dx": r["dx"],
-                         "gp": "", "ix": r["ix"], "count": r["count"]}],
+                         "count": r["count"]}],
             "recommend": r["dx"],
         }
         groups[key]["entries"].append(
@@ -357,7 +379,8 @@ def catalog_models(rows, products, closed):
 def tw_entry(raw, products):
     engines, seen = [], set()
     for r in raw["rows"]:
-        row = ({k: norm(r.get(col)) for k, col in COLS.items() if k != "count"}
+        row = ({k: norm(r.get(col)) for k, col in COLS.items()
+                if k not in ("count", "gp", "ix")}
                | {"count": parse_count(r.get(COLS["count"]))})
         # NGK repeats an identical row for some bikes (e.g. BMW S1000RR lists the same
         # engine twice), which would render as a duplicated spec line. Collapse only
@@ -464,8 +487,7 @@ def tw_table_models(rows, counts, products):
         if need is None:
             need = TW_TABLE_CYLINDERS.get((brand, r["model"]))
         entry = {"year": "", "year_from": None, "year_to": None, "notes": [],
-                 "engines": [{"engine": "", "oem": oem, "dx": dx,
-                              "gp": "", "ix": "", "count": need}],
+                 "engines": [{"engine": "", "oem": oem, "dx": dx, "count": need}],
                  "recommend": dx}
         by_brand[brand].append({
             "name": name, "name_ja": "", "cc": guess_cc(name), "src": "tw_table",
@@ -522,7 +544,7 @@ def main():
     # where a bike's plug changed mid-life; then CarMall's Taiwan sheets, which cover the
     # local lineup the Japanese catalogue never lists; then NGK Taiwan's finder API for
     # whatever neither has. Later sources only ever add bikes, never override one.
-    brands, dropped, conflicts = [], {"tw_table": 0, "tw": 0}, []
+    brands, dropped, conflicts, hidden = [], {"tw_table": 0, "tw": 0}, [], []
     all_brands = set(cat_by_brand) | set(table_by_brand) | set(api_by_brand)
     for brand in sorted(all_brands, key=str.lower):
         models = list(cat_by_brand.get(brand, []))
@@ -551,6 +573,9 @@ def main():
                 index[key].append(m)
                 models.append(m)
         if not models:
+            continue
+        if brand not in TW_MARKET_BRANDS:
+            hidden.append((brand, len(models)))
             continue
         models.sort(key=lambda m: (m["name"].lower(), m["cc"] or 0))
         brands.append({"en": brand, "tw": tw_names.get(brand) or BRAND_TW.get(brand, ""),
@@ -584,6 +609,10 @@ def main():
         print(f"  型錄開放式年份收邊 {len(closed)} 筆：")
         for c in closed:
             print(f"      {c}")
+    if hidden:
+        print(f"  台灣市場沒有而隱藏 {len(hidden)} 個廠牌／"
+              f"{sum(c for _, c in hidden)} 車款：")
+        print("      " + "、".join(f"{b}({c})" for b, c in sorted(hidden)))
     if conflicts:
         print(f"  ⚠ 兩份來源對同一台車給出不同料號 {len(conflicts)} 筆（採用較可信來源，需人工確認）：")
         for brand, name, src, dx, cname, csrc, cdx in conflicts:
