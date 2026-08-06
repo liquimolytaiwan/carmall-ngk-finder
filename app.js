@@ -22,6 +22,12 @@
     });
   }
   function modelLabel(m) { return m.cc ? m.name + "　" + m.cc + "cc" : m.name; }
+  function entryLabel(e) {
+    // The note ("平行輸入車", "駕訓車"…) is what separates two otherwise identical year
+    // rows, so it has to be visible in the picker, not only in the result.
+    var n = (e.notes && e.notes.length) ? "（" + e.notes.join("・") + "）" : "";
+    return (e.year || "不分年份") + n;
+  }
 
   // ---- load data ----
   fetch("data.json", { cache: "no-cache" })
@@ -56,15 +62,16 @@
     hideResult();
     var m = currentModel();
     if (!m) { hideYear(); postHeight(); return; }
-    // Most bikes have a single fitment and NGK carries no meaningful year split for them,
-    // so the year step only appears when there is an actual choice to make.
+    // Only ask for a year when this bike actually has more than one. Asking on a bike
+    // with a single fitment trains people to click past the step — and that step is the
+    // whole point on the bikes that do change plug mid-life.
     if (m.entries.length === 1) {
       hideYear();
       render(m, m.entries[0]);
       return;
     }
-    clearSelect(elYear, "請選擇年份");
-    m.entries.forEach(function (e, i) { elYear.appendChild(opt(String(i), e.year || "不分年份")); });
+    clearSelect(elYear, "請選擇出廠年份");
+    m.entries.forEach(function (e, i) { elYear.appendChild(opt(String(i), entryLabel(e))); });
     fldYear.hidden = false;
     postHeight();
   });
@@ -77,7 +84,7 @@
 
   function reset() { hideResult(); hideYear(); }
   function hideResult() { elResult.hidden = true; elResult.innerHTML = ""; }
-  function hideYear() { fldYear.hidden = true; clearSelect(elYear, "請選擇年份"); }
+  function hideYear() { fldYear.hidden = true; clearSelect(elYear, "請選擇出廠年份"); }
   function findBrand(en) {
     if (!DATA) return null;
     return DATA.brands.filter(function (b) { return b.en === en; })[0];
@@ -91,36 +98,71 @@
   // ---- render ----
   function render(m, e) {
     var b = findBrand(elBrand.value);
-    var sub = [b.tw, e.year].filter(Boolean).join("　");
+    var notes = (e.notes && e.notes.length) ? e.notes.join("・") : "";
+    var sub = [b.tw, m.name_ja && m.name_ja !== m.name ? m.name_ja : "", e.year, notes]
+      .filter(Boolean).join("　");
     var head = '<div class="rc-top"><div class="rc-veh">' +
       esc(b.en + " " + modelLabel(m)) +
       (sub ? '<small>' + esc(sub) + '</small>' : "") + '</div></div>';
 
     var body = e.no_dx ? noDxHtml(e) : buyHtml(e);
     elResult.innerHTML = '<div class="rc">' + head +
-      '<div class="rc-body">' + specHtml(e) + body + '</div></div>';
+      '<div class="rc-body">' + specHtml(e) + body + sourceHtml(m, e) + '</div></div>';
     elResult.hidden = false;
     postHeight();
   }
 
-  // Spec table: what NGK lists for this bike, across all its plug lines.
+  // Spec table: what NGK lists for this bike, across all its plug lines. Columns are
+  // built from what the row actually carries — the printed catalogue has no separate OEM
+  // or platinum column, and rendering them as a wall of "—" reads as missing data.
   function specHtml(e) {
-    var showEngine = e.engines.some(function (x) { return x.engine; });
+    var cols = [
+      { th: "引擎", get: function (x) { return x.engine; } },
+      { th: "原廠／標準", get: function (x) { return x.oem; } },
+      { th: "MotoDX 釕合金", get: function (x) { return x.dx; }, dx: true },
+      { th: "白金", get: function (x) { return x.gp; } },
+      { th: "銥合金", get: function (x) { return x.ix; } }
+    ].filter(function (c) {
+      return e.engines.some(function (x) { return c.get(x); });
+    });
     var rows = e.engines.map(function (x) {
-      return '<tr>' +
-        (showEngine ? '<td data-th="引擎">' + esc(x.engine || "—") + '</td>' : "") +
-        '<td data-th="原廠">' + esc(x.oem || "—") + '</td>' +
-        '<td data-th="MotoDX 釕合金">' + (x.dx ? '<b class="dx">' + esc(x.dx) + '</b>' : "—") + '</td>' +
-        '<td data-th="白金">' + esc(x.gp || "—") + '</td>' +
-        '<td data-th="銥合金">' + esc(x.ix || "—") + '</td>' +
-        '<td data-th="支數">' + (x.count ? esc(x.count) + " 支" : "—") + '</td>' +
-        '</tr>';
+      var tds = cols.map(function (c) {
+        var v = c.get(x);
+        return '<td data-th="' + esc(c.th) + '">' +
+          (v ? (c.dx ? '<b class="dx">' + esc(v) + '</b>' : esc(v)) : "—") + '</td>';
+      }).join("");
+      return '<tr>' + tds + '<td data-th="支數">' +
+        (x.count ? esc(x.count) + " 支" : "—") + '</td></tr>';
     }).join("");
     return '<div class="spec-title">適用規格</div>' +
-      '<div class="spec-wrap"><table class="spec">' +
-      '<thead><tr>' + (showEngine ? '<th>引擎</th>' : "") +
-      '<th>原廠</th><th>MotoDX 釕合金</th><th>白金</th><th>銥合金</th><th>支數</th>' +
-      '</tr></thead><tbody>' + rows + '</tbody></table></div>';
+      '<div class="spec-wrap"><table class="spec"><thead><tr>' +
+      cols.map(function (c) { return '<th>' + esc(c.th) + '</th>'; }).join("") +
+      '<th>支數</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+  }
+
+  // Which list this bike came from, and — for the Taiwan list — the fact that it carries
+  // no year breakdown. Saying so is the point of this rebuild: a bike answered without a
+  // year is exactly the case where an early model can be sent the late model's plug.
+  // Whether this particular answer is year-specific, and where it came from. The claim is
+  // made per entry, not per source: the catalogue prints plenty of rows with no year at
+  // all, and telling those users the result was segmented by production year would give
+  // false confidence in exactly the case the warning exists to flag.
+  function sourceHtml(m, e) {
+    var where = m.src === "catalog" ? "NGK 原廠車款對照表"
+      : m.src === "tw_table" ? "NGK 台灣機種別 MOTO DX 對照表"
+      : "NGK 台灣官方適應表";
+    // Keyed off this entry's own year range, not off which list it came from: the
+    // catalogue prints plenty of undated rows, and NGK Taiwan does date some of its.
+    if (e.year_from || e.year_to) {
+      // State the range rather than "the year you picked" — most bikes have a single
+      // dated row and never show the picker, so there was nothing for them to pick.
+      return '<div class="note">' + iconInfo() +
+        '<span>資料來自' + where + '，本結果適用出廠年份 <b>' + esc(e.year) +
+        '</b>。</span></div>';
+    }
+    return '<div class="note note-warn">' + iconInfo() +
+      '<span>資料來自' + where + '，該表<b>未標示此車款的出廠年份</b>。' +
+      '同型車不同年份有可能改用不同火星塞，安裝前請對照車主手冊或洽客服再確認。</span></div>';
   }
 
   function buyHtml(e) {
@@ -132,7 +174,7 @@
       // Distinguish "we don't carry it" from "we carry it but not enough for this bike",
       // and quote the real numbers so the customer knows what to ask客服 for.
       var lines = e.buys.map(function (x) {
-        var s = '<b>' + esc(x.sku) + '</b>' + (x.need ? '　需 ' + x.need + ' 支' : "");
+        var s = '<b>' + esc(x.sku) + '</b>' + (x.need != null ? '　需 ' + x.need + ' 支' : "");
         if (x.url) return s + '　✓ 有現貨';
         if (x.stock != null) return s + '　目前庫存 ' + x.stock + ' 支';
         return s + '　未販售';
@@ -150,13 +192,17 @@
   }
 
   function card(x) {
-    var need = x.need || 1;
-    var qtyLine = need > 1
-      ? '單支 $' + fmt(x.price) + '　×　此車需 ' + need + ' 支'
-      : '單支 $' + fmt(x.price) + '　此車需 1 支';
+    // x.need is null when no source states this bike's plug count. Quoting "此車需 1 支"
+    // then would be a guess printed as a fact, and a twin owner would order half a set.
+    var need = x.need;
+    var qtyLine = need == null
+      ? '單支 $' + fmt(x.price) + '　請依引擎缸數選購數量'
+      : need > 1
+        ? '單支 $' + fmt(x.price) + '　×　此車需 ' + need + ' 支'
+        : '單支 $' + fmt(x.price) + '　此車需 1 支';
     var lowStock = (x.stock != null && x.stock > 0 && x.stock <= 3)
       ? '<span class="tag tag-low">僅剩 ' + x.stock + ' 件</span>' : "";
-    var priceHtml = need > 1
+    var priceHtml = (need != null && need > 1)
       ? '<div class="opt-price"><span class="unitp">共 ' + need + ' 支</span><span class="now">$' +
         fmt(x.total) + '</span></div>'
       : '<div class="opt-price"><span class="now">$' + fmt(x.price) + '</span></div>';

@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
 .DS_Store
+# Source documents for the fitment tables. Kept out of the repo on purpose: this repo is
+# public and served by GitHub Pages, and the NGK book-format catalogue is a copyrighted
+# publication. The parsed JSON that the build actually consumes is committed instead —
+# see README for where the originals live and how to re-run the parsers.
+tools/source/
+.playwright-mcp/

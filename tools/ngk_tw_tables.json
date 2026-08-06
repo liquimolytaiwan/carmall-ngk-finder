@@ -1,0 +1,649 @@
+{
+ "source": "CarMall 提供之台灣機種別 MOTO DX 對照表",
+ "rows": [
+  {
+   "brand": "KYMCO",
+   "model": "DTX 360",
+   "oem": "CR7E",
+   "dx": "CR7EDX-S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "KYMCO",
+   "model": "AK550",
+   "oem": "CR7E",
+   "dx": "CR7EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "Down Town 350 TCS",
+   "oem": "CR7E",
+   "dx": "CR7EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "Nikita 300",
+   "oem": "CR7E",
+   "dx": "CR7EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "XCITING S 400 TCS",
+   "oem": "CR7E",
+   "dx": "CR7EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "CV3",
+   "oem": "CR7E",
+   "dx": "CR7EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "RACING KING 180",
+   "oem": "CR7E",
+   "dx": "CR7EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "MANY 110(六期)",
+   "oem": "CR7E",
+   "dx": "CR7EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "KRV 180",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "KYMCO",
+   "model": "Gsense 125",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "RACING S 150",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "RACING S 125",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "X SENSE 150",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "LIKE COLOMBO 150",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "跑酷125",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "RTS 125",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "Krider400(雙缸)",
+   "oem": "CR9EIA-9",
+   "dx": "CR9EDX-S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "KYMCO",
+   "model": "MANY 110(七期)",
+   "oem": "CPR7EA-9",
+   "dx": "CPR7EDX-9S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "KYMCO",
+   "model": "NEW MANY 110",
+   "oem": "CPR7EA-9",
+   "dx": "CPR7EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "NEW MANY 125(六期)",
+   "oem": "CPR7EA-9",
+   "dx": "CPR7EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "RTS 165",
+   "oem": "CPR7EA-9",
+   "dx": "CPR7EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "CUE100",
+   "oem": "CR7HSA",
+   "dx": "CR7HDX-S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "KYMCO",
+   "model": "GP125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "LIKE 125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "NICE 100(七期)",
+   "oem": "CR7HSA",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "NICE 100(六期)",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "NICE110",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "NICE XL",
+   "oem": "CR7HSA",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "VP 125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "X SENSE 125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "大樂 Dollar 125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "優格Yogurt 125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "新名流125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "新名流150",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "超級金牌150(七期)",
+   "oem": "CR7HSA",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "金牌125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "超級金牌150",
+   "oem": "CR6HSA",
+   "dx": "CR6HDX-S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "KYMCO",
+   "model": "LIKE150",
+   "oem": "CR6HSA",
+   "dx": "CR6HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "G6 150",
+   "oem": "CR8E",
+   "dx": "CR8EDX-S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "KYMCO",
+   "model": "VJR 125",
+   "oem": "CR8E",
+   "dx": "CR8EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "NEW MANY 125(七期)",
+   "oem": "CR8E",
+   "dx": "CR8EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "KYMCO",
+   "model": "勁多利150",
+   "oem": "CR8E",
+   "dx": "CR8EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "6代FIGHTER",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "SYM",
+   "model": "DRG",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "野狼T2 250",
+   "oem": "CR8E",
+   "dx": "CR8EDX-S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "SYM",
+   "model": "CRUiSYM",
+   "oem": "CR8E",
+   "dx": "CR8EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "Joymax Z",
+   "oem": "CR8E",
+   "dx": "CR8EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "MAX SYM 600 i",
+   "oem": "CR8E",
+   "dx": "CR8EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "JET S",
+   "oem": "CPR7EA-9",
+   "dx": "CPR7EDX-9S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "SYM",
+   "model": "JET SR",
+   "oem": "CPR7EA-9",
+   "dx": "CPR7EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "MAX SYM TL",
+   "oem": "CPR7EA-9",
+   "dx": "CPR7EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "JET SL",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "SYM",
+   "model": "MMBCU(黑曼巴)",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "RV 180 EURO",
+   "oem": "CPR8EA-9",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "Vega125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "SYM",
+   "model": "Vivo",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "WOO100",
+   "oem": "CR7HSA",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "WOO115",
+   "oem": "CR7HSA",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "Z1 125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "迪爵125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "全新迪爵DUKE125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "金發財",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "活力125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "風動125",
+   "oem": "CR7HSA",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "KRNBT",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "4MICA",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "FNX BT",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "FIDDLE125",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "SYM",
+   "model": "FIDDLE LT 110",
+   "oem": "LR7D",
+   "dx": "CR7HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "勁戰(水冷引擎)",
+   "oem": "",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "BWS(水冷引擎)",
+   "oem": "",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "FORCE",
+   "oem": "",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "S-MAX",
+   "oem": "",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "TRICITY155",
+   "oem": "",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "N-MAX",
+   "oem": "",
+   "dx": "CPR8EDX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "勁戰(1~5代)",
+   "oem": "",
+   "dx": "CR7EDX-S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "BWSX",
+   "oem": "",
+   "dx": "CR7EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "BWSR",
+   "oem": "",
+   "dx": "CR7EDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "CUXI",
+   "oem": "",
+   "dx": "CR6HDX-S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "AXIS Z",
+   "oem": "",
+   "dx": "CR6HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "JOG 125",
+   "oem": "",
+   "dx": "CR6HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "JOG 115",
+   "oem": "",
+   "dx": "CR6HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "LIMI",
+   "oem": "",
+   "dx": "CR6HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "RS NEO",
+   "oem": "",
+   "dx": "CR6HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "VINOORA",
+   "oem": "",
+   "dx": "CR6HDX-S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "MT-09",
+   "oem": "",
+   "dx": "CPR9EDX-9S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "R3",
+   "oem": "",
+   "dx": "LMAR8ADX-9S",
+   "dx_explicit": true
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "MT-03",
+   "oem": "",
+   "dx": "LMAR8ADX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "MT-07",
+   "oem": "",
+   "dx": "LMAR8ADX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "YZK-R7",
+   "oem": "",
+   "dx": "LMAR8ADX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "TRICITY 300",
+   "oem": "",
+   "dx": "LMAR8ADX-9S",
+   "dx_explicit": false
+  },
+  {
+   "brand": "YAMAHA",
+   "model": "XMAX",
+   "oem": "",
+   "dx": "LMAR8ADX-9S",
+   "dx_explicit": false
+  }
+ ]
+}
