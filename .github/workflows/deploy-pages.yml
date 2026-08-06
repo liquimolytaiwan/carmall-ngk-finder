@@ -1,0 +1,56 @@
+name: deploy-pages
+
+# Publishes the repo root to GitHub Pages.
+#
+# GitHub's legacy Pages builder stopped dispatching for this repo on 2026-08-06 — builds
+# sat at 0ms and then reported a bare "Page build failed" with no log, including on a
+# commit containing nothing but a data.json timestamp bump. This is the build path GitHub
+# now recommends, and unlike the legacy one it leaves a readable log when something breaks.
+#
+# The site is plain static files, so there is nothing to compile: upload the checkout and
+# deploy it. A failed run leaves the previously deployed site serving untouched.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it — a half-applied deploy is worse
+# than a slightly stale one. Queued duplicates collapse into the newest.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check data.json is present and parses
+        # The whole finder is one fetch of data.json; shipping a truncated or invalid one
+        # renders an empty picker with no error the customer can act on.
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          d = json.load(open("data.json"))
+          models = sum(len(b["models"]) for b in d["brands"])
+          print(f"data.json: {len(d['brands'])} brands, {models} models, generated {d['generated']}")
+          if models < 500:
+              sys.exit(f"ERROR: only {models} models — data.json looks truncated")
+          PY
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
