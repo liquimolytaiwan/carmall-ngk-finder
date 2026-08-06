@@ -293,6 +293,10 @@ NAMES = {
     "ルッカー125": "Looker 125",
     "レーシング125": "Racing 125",
     "アジリティー50": "Agility 50",
+    # 日規專屬車，車名查自日本二輪型錄站（bikebros / goobike）的 KYMCO 車種頁
+    "キャプチャー125": "CAPTURE 125",
+    "カーロ100/Ⅱ": "CARO 100 / II",
+    "カーロ50/Ⅱ": "CARO 50 / II",
 
     # ── PGO 摩特動力 ─────────────────────────────────────────────────────────
     "エックスホット150": "X-HOT 150",
@@ -303,6 +307,9 @@ NAMES = {
     "ジェイブブ125デュオス": "J-BUBU 125 Duos",
     "ティグラ125": "Tigra 125",
     "PMX110/110ネイキッド": "PMX 110 / 110 Naked",
+    # 日本二輪型錄站（bikebros）的 PGO 車種頁就叫「iBUBU 125／アイブブ 125」，
+    # 不是類推來的。マイブブ 查不到對應的拉丁寫法，留在 UNMAPPED_ON_PURPOSE。
+    "アイブブ125": "iBUBU 125",
 
     # ── SYM 三陽 ─────────────────────────────────────────────────────────────
     "X'pro風 50": "X'PRO 風 50",
@@ -389,11 +396,7 @@ NAMES = {
 # would put a made-up model name in front of a customer choosing an engine part. These
 # render with their catalogue name; add them here only once the real name is verified.
 UNMAPPED_ON_PURPOSE = {
-    "キャプチャー125": "KYMCO, 日規專屬車，拉丁名未確認",
-    "カーロ100/Ⅱ": "KYMCO, 日規專屬車，拉丁名未確認",
-    "カーロ50/Ⅱ": "KYMCO, 日規專屬車，拉丁名未確認",
-    "アイブブ125": "PGO, 疑為 i-BUBU，未確認",
-    "マイブブ125": "PGO, 疑為 My BUBU，未確認",
+    "マイブブ125": "PGO, 同系的 iBUBU 查得到、這台查不到拉丁寫法，不類推",
     "クッチョロ": "CAGIVA, 疑為 Cucciolo，未確認",
 }
 

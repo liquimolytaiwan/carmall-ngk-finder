@@ -126,6 +126,17 @@ TW_TABLE_ROW_FIXES = {
     ("KYMCO", "NEW MANY 125(六期)"): {"oem": "CR8E", "dx": "CR8EDX-S"},
 }
 
+# Rows in NGK Taiwan's own database that describe a different bike than the model they
+# are filed under. Dropped by (brand, model, year) so the rest of that model survives.
+TW_BAD_ENTRIES = {
+    # NGK Taiwan files a "2019~ / CR9EIA-9 / CR9EDX-S" row under GSX1100SKATANA at
+    # 1100cc. That is the 2019 KATANA, which is a 1000cc bike — the printed catalogue
+    # lists the two separately: GSX1100Sカタナ 1100cc has no MotoDX in any of its three
+    # year ranges, and KATANA 1000cc '19.5~ is the one taking CR9EDX-S. Left in, a
+    # GSX1100S owner picking "2019 起" is sold a plug NGK never listed for their bike.
+    ("SUZUKI", "GSX1100SKATANA"): {"2019~"},
+}
+
 # How many plugs each bike takes, for the Taiwan sheets — which list a part number but
 # never a quantity. Every entry here is sourced, because a wrong count quotes a wrong
 # total and lets someone order half a set:
@@ -497,12 +508,16 @@ def tw_table_models(rows, counts, products):
     return by_brand
 
 
-def tw_models(raw, products, closed):
+def tw_models(raw, products, closed, dropped_rows):
     by_brand, tw_names = defaultdict(list), {}
     for b in raw["cartypes"]["2"]:
         tw_names[b["name_en"]] = b["name_tw"]
         models = OrderedDict()
         for e in b["entries"]:
+            bad = TW_BAD_ENTRIES.get((b["name_en"], norm(e["model"])), set())
+            if norm(e["year"]) in bad:
+                dropped_rows.append((b["name_en"], norm(e["model"]), norm(e["year"])))
+                continue
             models.setdefault((norm(e["model"]), norm(e["displacement"])), []).append(
                 tw_entry(e, products))
         dedup = set()
@@ -540,7 +555,8 @@ def main():
     closed = []
     cat_by_brand = catalog_models(catalog["rows"], products, closed)
     table_by_brand = tw_table_models(tw_tables["rows"], api_plug_counts(raw), products)
-    api_by_brand, tw_names = tw_models(raw, products, closed)
+    bad_rows = []
+    api_by_brand, tw_names = tw_models(raw, products, closed, bad_rows)
 
     # Priority. The printed catalogue first because it is the only source that knows
     # where a bike's plug changed mid-life; then CarMall's Taiwan sheets, which cover the
@@ -607,6 +623,10 @@ def main():
     print(f"  支數不明     {no_count}")
     print(f"  因較可信來源已涵蓋而略過  台灣對照表 {dropped['tw_table']}"
           f" ／ 台灣官網 {dropped['tw']}")
+    if bad_rows:
+        print(f"  台灣官網明顯歸錯車的資料列，已剔除 {len(bad_rows)} 筆：")
+        for br, mo, yr in bad_rows:
+            print(f"      {br}「{mo}」{yr}")
     if closed:
         print(f"  型錄開放式年份收邊 {len(closed)} 筆：")
         for c in closed:
