@@ -76,10 +76,12 @@ TW_MARKET_BRANDS = {
     "KYMCO", "SYM", "PGO", "Hartford",
     # 日系
     "HONDA", "YAMAHA", "SUZUKI", "KAWASAKI",
-    # 有台灣總代理的歐美韓系
+    # 歐美系
     "TRIUMPH", "APRILIA", "VESPA", "PIAGGIO", "BENELLI", "KTM", "HUSQVARNA",
-    "HYOSUNG", "DUCATI", "BMW", "HARLEY-DAVIDSON", "MV AGUSTA", "INDIAN",
-    "ROYAL ENFIELD", "MOTO GUZZI",
+    "DUCATI", "BMW", "HARLEY-DAVIDSON", "MV AGUSTA", "INDIAN", "ROYAL ENFIELD",
+    "MOTO GUZZI",
+    # 台灣有在跑、但屬小眾／越野競技的（2026-08-06 Jerry 指名加回）
+    "ITALJET", "TM RACING", "ADIVA", "GAS GAS", "BETA",
 }
 
 
