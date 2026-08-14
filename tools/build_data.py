@@ -44,12 +44,49 @@ BRAND_TW = {
     "HONDA": "本田", "YAMAHA": "山葉", "SUZUKI": "鈴木", "KAWASAKI": "川崎",
     "KYMCO": "光陽", "SYM": "三陽", "PGO": "摩特動力", "Hartford": "哈特佛",
     "TRIUMPH": "凱旋", "APRILIA": "阿普利亞", "PIAGGIO": "比雅久", "VESPA": "偉士牌",
-    "HYOSUNG": "曉星", "BENELLI": "貝納利", "DUCATI": "杜卡迪", "BMW": "寶馬",
-    "HARLEY-DAVIDSON": "哈雷", "MOTO GUZZI": "moto guzzi", "HUSQVARNA": "husqvarna",
+    "HYOSUNG": "曉星", "BENELLI": "貝納利", "DUCATI": "杜卡迪",
+    "HARLEY-DAVIDSON": "哈雷",
+    "BMW": "寶馬",     # 2026-08-14 Jerry 裁示要加中文（雨刷查詢器同步）
+    # 空字串 = 台灣就是講英文，刻意不加中文。這一欄直接顯示在選單上，
+    # 所以寧可留空也不要放 husqvarna 這種佔位用的小寫英文（原本就是這樣，已清掉）。
+    "MOTO GUZZI": "", "HUSQVARNA": "",
+    "KTM": "", "GAS GAS": "", "BETA": "", "ITALJET": "", "ADIVA": "", "TM RACING": "",
 }
 
 # Taiwan trim markers that never change the plug. Stripped only when testing whether a
 # better source already covers a model, never from anything shown to a customer.
+# 車款的台灣中文名。**只加顯示欄位，不動 name** —— name 是跨專案的鍵，
+# carmall-blog-automation 的 plugs.py 用它比對車款與綽號表，改名會打壞部落格
+# （2026-08-06 已經因此壞過一次：17 個綽號裡 13 個失效）。
+# 規則同 model_names.py：只填原廠自己在用的名字，查不到就留空，不硬翻。
+# 有些車款的中文名本來就寫在 name 裡（例如「MMBCU(黑曼巴)」「Cygnus X 勁戰」），
+# 那種不要再填一次，否則畫面上會出現兩次中文。
+MODEL_TW: dict[tuple[str, str], str] = {
+    # (廠牌, 車款 name): 台灣中文名 —— 只收原廠自己在用的名字。
+    # 查不到官方名的一律不填：填錯會讓人挑錯車，而挑錯車就會拿到錯的火星塞，
+    # 那正是這個查詢器存在的理由。沒填的清單見 MODEL_TW_UNVERIFIED。
+    ("SYM", "Fighter 4V 150"): "悍將",
+    ("SYM", "NEW Fighter 150 ZR"): "悍將",
+    ("SYM", "T2 250"): "野狼",
+    ("SYM", "Vivo"): "活力",
+    ("KYMCO", "Racing 125"): "雷霆",
+    ("KYMCO", "Racing 150"): "雷霆",
+    ("KYMCO", "RACING KING 180"): "雷霆王",
+    ("KYMCO", "RACING S 125"): "雷霆S",
+    ("KYMCO", "RACING S 150"): "雷霆S",
+    ("KYMCO", "NEW MANY 110"): "魅力",
+}
+
+# 有英文名、但查不到（或查到有衝突的）官方中文名，所以刻意留空的車款。
+# 列在這裡是為了讓下一個人知道「沒填」是判斷過的結果，不是漏掉。
+MODEL_TW_UNVERIFIED = {
+    ("SYM", "X'pro 100"): "搜到的資料把「高手」對到 X'PRO，但同表另有『X'PRO 風 50』把「風」寫進名字，兩者衝突",
+    ("SYM", "GT 125/EFI"): "「高手」到底對 GT 還是 X'PRO，查到的說法不一致",
+    ("KYMCO", "NICE110"): "Nice 與「豪邁」「名流」的對應查不到官方說法",
+    ("PGO", "J-BUBU 125 Duos"): "查不到官方中文名（同系的 iBUBU 也是）",
+}
+
+
 TRIM_TOKENS = ("ABS", "UBS", "CBS", "TCS", "LED", "EFI", "BREMBO",
                "碟煞", "鼓煞", "雙碟煞", "特仕版", "仕樣", "版")
 
@@ -596,6 +633,9 @@ def main():
             hidden.append((brand, len(models)))
             continue
         models.sort(key=lambda m: (m["name"].lower(), m["cc"] or 0))
+        for m in models:
+            tw=MODEL_TW.get((brand, m["name"]))
+            if tw: m["tw"]=tw
         brands.append({"en": brand, "tw": tw_names.get(brand) or BRAND_TW.get(brand, ""),
                        "models": models})
 

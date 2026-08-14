@@ -21,7 +21,14 @@
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[c];
     });
   }
-  function modelLabel(m) { return m.cc ? m.name + "　" + m.cc + "cc" : m.name; }
+  // Display name = the name + the Taiwanese name when the maker has one, e.g.
+  // "MMBCU 黑曼巴". The raw name stays the lookup key: data.json is also read by the
+  // blog automation, which matches on it, so only what the eye sees changes here.
+  function disp(name, tw) { return tw ? name + " " + tw : name; }
+  function modelLabel(m) {
+    var n = disp(m.name, m.tw);
+    return m.cc ? n + "　" + m.cc + "cc" : n;
+  }
   function entryLabel(e) {
     // The note ("平行輸入車", "駕訓車"…) is what separates two otherwise identical year
     // rows, so it has to be visible in the picker, not only in the result.
@@ -36,7 +43,7 @@
       DATA = d;
       clearSelect(elBrand, "請選擇廠牌");
       d.brands.forEach(function (b) {
-        elBrand.appendChild(opt(b.en, b.tw ? b.en + "（" + b.tw + "）" : b.en));
+        elBrand.appendChild(opt(b.en, disp(b.en, b.tw)));
       });
       postHeight();
     })
@@ -99,10 +106,10 @@
   function render(m, e) {
     var b = findBrand(elBrand.value);
     var notes = (e.notes && e.notes.length) ? e.notes.join("・") : "";
-    var sub = [b.tw, m.name_ja && m.name_ja !== m.name ? m.name_ja : "", e.year, notes]
+    var sub = [m.name_ja && m.name_ja !== m.name ? m.name_ja : "", e.year, notes]
       .filter(Boolean).join("　");
     var head = '<div class="rc-top"><div class="rc-veh">' +
-      esc(b.en + " " + modelLabel(m)) +
+      esc(disp(b.en, b.tw) + " " + modelLabel(m)) +
       (sub ? '<small>' + esc(sub) + '</small>' : "") + '</div></div>';
 
     var body = e.no_dx ? noDxHtml(e) : buyHtml(e);
