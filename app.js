@@ -235,7 +235,7 @@
   function trustHtml() {
     return '<div class="note">' + iconInfo() +
       '<span>釕合金 MotoDX 為 NGK 目前最高階的機車火星塞，較原廠鎳合金塞壽命更長、點火更穩定。' +
-      '價格與庫存每日同步，實際成交以商品頁為準。</span></div>';
+      '價格與庫存每日同步，實際成交以商品頁面為準。</span></div>';
   }
 
   function fmt(n) {
