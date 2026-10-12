@@ -171,3 +171,9 @@ gh workflow run refresh-data.yml -R liquimolytaiwan/carmall-ngk-finder -f recraw
 
 GitHub Pages，`main` 根目錄，帳號 **liquimolytaiwan**（推送前 `gh auth switch -u liquimolytaiwan`），
 commit email 用 `manhowtrading@gmail.com`。
+
+發布走 `deploy-pages.yml`：人推 `main`、或 `refresh-data` 跑成功之後都會觸發。🔴 後者要靠
+`workflow_run` —— 機器人用 `GITHUB_TOKEN` 推的 commit 不會觸發 `push` 型 workflow，
+2026-08-14 ～ 10-12 線上版就這樣停了兩個月（data.json 每天在 repo 裡更新、網站沒跟上）。
+懷疑線上沒更新時：`curl -sI https://liquimolytaiwan.github.io/carmall-ngk-finder/data.json`
+看 `last-modified`，再 `gh workflow run deploy-pages.yml -R liquimolytaiwan/carmall-ngk-finder`。

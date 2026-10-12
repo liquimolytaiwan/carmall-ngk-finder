@@ -13,6 +13,15 @@ name: deploy-pages
 on:
   push:
     branches: [main]
+  # refresh-data pushes with the default GITHUB_TOKEN, and GitHub never fires `push`
+  # workflows for those pushes (anti-recursion rule). So from 2026-08-14 to 2026-10-12 the
+  # live site sat on the last human push while the bot committed fresh data twice a day —
+  # stale prices/stock, and after CarMall renamed 12 product handles on 2026-10-08 every
+  # buy button went to a 404. `workflow_run` is not subject to that rule.
+  workflow_run:
+    workflows: [refresh-data]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -28,6 +37,8 @@ concurrency:
 
 jobs:
   deploy:
+    # A failed refresh keeps the old data.json on main, so there is nothing new to ship.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
