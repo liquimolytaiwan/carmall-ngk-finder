@@ -7,6 +7,11 @@
   var fldYear  = document.getElementById("field-year");
   var elResult = document.getElementById("result");
 
+  // The back link is only for visitors who came from the parts-finder hub (?from=hub).
+  // The standalone /pages/plugsfinder embed has no hub page to return to, so it stays hidden there.
+  var elBack = document.getElementById("back-hub");
+  if (elBack && /(?:^|[?&])from=hub(?:&|$)/.test(location.search)) elBack.hidden = false;
+
   function opt(value, label) {
     var o = document.createElement("option");
     o.value = value; o.textContent = label;
