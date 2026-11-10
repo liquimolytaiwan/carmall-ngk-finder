@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Crawl the NGK Taiwan spark-plug finder (ngksparkplugs.com.tw) into structured JSON.
+"""Crawl the NGK Taiwan spark-plug finder (www.ngksparkplugs.com.tw) into structured JSON.
 
 The public finder is backed by four unauthenticated POST endpoints:
     /api/carbrand   {cartype}                                  -> [{id,cartype,name_en,name_tw,parts_count}]
     /api/carmodel   {carbrand}                                 -> ["MODEL / DISPLACEMENT", ...]
-    /api/caryear    {modelname,displacement}                   -> ["2004 - 2008", ...]
+    /api/caryear    {carbrand,modelname,displacement}          -> ["2004 - 2008", ...]
     /api/finder     {carbrand,modelname,displacement,caryear}  -> HTML fragment (one row per engine)
 
 cartype 1 = 汽車, 2 = 機車. The server rate-limits to 60 req/min, so every call is paced.
@@ -17,7 +17,7 @@ Usage:  fetch_ngk.py [--cartype 1|2] [--out ngk_raw.json]
 import argparse, html, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-SITE = "https://ngksparkplugs.com.tw"
+SITE = "https://www.ngksparkplugs.com.tw"  # apex 301s here; urllib replays a redirected POST as GET -> 405
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124 Safari/537.36")
 PACE = 1.15          # seconds between requests (server allows 60/min)
@@ -99,7 +99,9 @@ def crawl(cartypes):
                 if not modelname:
                     modelname, displacement = mstr, ""
                 try:
-                    years = post_json("/api/caryear", {"modelname": modelname,
+                    # carbrand became required (422 without it) when the site moved to www.
+                    years = post_json("/api/caryear", {"carbrand": br["id"],
+                                                       "modelname": modelname,
                                                        "displacement": displacement})
                 except Exception as e:
                     failures.append(f"caryear {br['name_en']} {mstr}: {e}")
