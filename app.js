@@ -50,6 +50,25 @@
       d.brands.forEach(function (b) {
         elBrand.appendChild(opt(b.en, disp(b.en, b.tw)));
       });
+      // Shareable link: carmall-parts-finder/assets/link.js (optional — loaded async from
+      // that repo; spec in its docs/share-links.md). Keys are names, never option indexes.
+      // The model key carries the cc: ZX-6R and MT-03 each appear twice with different cc.
+      (window.CarmallLinkQueue = window.CarmallLinkQueue || []).push({
+        finder: "plugs",
+        title: "火星塞快速查詢",
+        result: elResult,
+        steps: [
+          { el: elBrand, p: "b", key: function (v) { return v; } },
+          { el: elModel, p: "m", key: function (v) {
+              var b = findBrand(elBrand.value), m = b && b.models[+v];
+              return m ? m.name + (m.cc ? " " + m.cc + "cc" : "") : "";
+            } },
+          { el: elYear, p: "y", key: function (v) {
+              var m = currentModel();
+              return m && m.entries[+v] ? entryLabel(m.entries[+v]) : "";
+            } }
+        ]
+      });
       postHeight();
     })
     .catch(function () {

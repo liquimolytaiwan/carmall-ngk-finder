@@ -1,26 +1,128 @@
-<!-- ===== CarMall 火星塞快速查詢 — 貼進 Cyberbiz 自訂頁面的 HTML 區塊 ===== -->
-<!-- max-width matches /pages/wiperguide so the two finder pages line up. -->
-<div id="carmall-plug-finder" style="max-width:680px;margin:0 auto;">
-  <iframe id="cmp-frame"
-    src="https://liquimolytaiwan.github.io/carmall-ngk-finder/"
+<!-- ===== CarMall 查詢器嵌入碼 — 貼進 Cyberbiz 自訂頁面的 HTML 區塊 =====
+     三個頁面共用同一份，只差最上面「每一頁只改這裡」那三行（與 iframe 的 title）：
+       /pages/partsfinder  HOME "/carmall-parts-finder/"  ONLY ""       VIA_HUB true
+       /pages/wiperguide   HOME "/carmall-wiper-finder/"  ONLY "wiper"  VIA_HUB false
+       /pages/plugsfinder  HOME "/carmall-ngk-finder/"    ONLY "plugs"  VIA_HUB false
+     分享連結的規格：docs/share-links.md（在 carmall-parts-finder repo）。 -->
+<!-- max-width matches across the three finder pages so they line up. -->
+<div id="carmall-finder" style="max-width:680px;margin:0 auto;">
+  <iframe id="cmf-frame"
     style="width:100%;border:0;display:block;min-height:340px;"
-    title="火星塞快速查詢" scrolling="no"></iframe>
+    title="火星塞快速查詢" scrolling="no" allow="clipboard-write; web-share"></iframe>
 </div>
 <script>
 (function () {
+  // ---- 每一頁只改這裡 ----
+  var HOME = "/carmall-ngk-finder/";     // 網址沒有指定查詢結果時，框裡打開的頁面
+  var ONLY = "plugs";                     // 只開這一種查詢器（雨刷頁 "wiper"、火星塞頁 "plugs"）；入口頁留空
+  var VIA_HUB = false;                    // 從入口頁打開的查詢器要顯示「← 換別的商品」
+  // ------------------------
+
   var ORIGIN = "https://liquimolytaiwan.github.io";
+  // carmallWiperHeight / carmallPlugHeight are the two older finders' names; the hub and
+  // every newer finder use carmallFinderHeight.
+  var TYPES = ["carmallFinderHeight", "carmallWiperHeight", "carmallPlugHeight"];
+  // Finder key -> path on ORIGIN. The two finders with their own repo are listed; any
+  // other key is a folder of carmall-parts-finder, so a new category there needs no
+  // re-paste. The key is checked against a strict pattern first and only ever becomes a
+  // path on ORIGIN — a link can never point this frame anywhere else.
+  var REPOS = { wiper: "/carmall-wiper-finder/", plugs: "/carmall-ngk-finder/" };
+  var KEYS = ["b", "m", "y"];   // brand, model, year — the only state a link may carry
+  var MAX_LEN = 100;
+  var f = document.getElementById("cmf-frame");
+  if (!f) return;
+
+  function pathFor(key) {
+    if (typeof key !== "string" || !/^[a-z]{2,20}$/.test(key)) return null;
+    if (ONLY && key !== ONLY) return null;
+    return Object.prototype.hasOwnProperty.call(REPOS, key) ? REPOS[key] : "/carmall-parts-finder/" + key + "/";
+  }
+  function clean(raw) {
+    var out = new URLSearchParams();
+    KEYS.forEach(function (k) {
+      var v = raw.get(k);
+      if (v && v.length <= MAX_LEN) out.set(k, v);
+    });
+    return out.toString();
+  }
+  function readHash() {
+    try { return new URLSearchParams(location.hash.replace(/^#/, "")); }
+    catch (e) { return new URLSearchParams(); }
+  }
+
+  // Open the finder (and car) the address bar names, or HOME. State travels in the
+  // #hash: changing it never reaches the server and never adds a GA page_view.
+  var opened = "";
+  function open() {
+    var h = readHash(), key = h.get("f"), path = pathFor(key), src;
+    if (path) {
+      var st = clean(h);
+      src = ORIGIN + path + (VIA_HUB ? "?from=hub" : "") + (st ? "#" + st : "");
+    } else {
+      src = ORIGIN + HOME;
+    }
+    opened = location.hash;
+    // Set before navigating: share / copy inside the frame need these permissions, and
+    // a page editor may drop the attribute from the pasted HTML.
+    f.setAttribute("allow", "clipboard-write; web-share");
+    f.src = src;
+  }
+
   window.addEventListener("message", function (e) {
-    var f = document.getElementById("cmp-frame");
-    // Only the finder iframe may resize itself. Without these checks any other frame
-    // or opened window on the page could post a height and distort the storefront.
-    if (!f || e.origin !== ORIGIN || e.source !== f.contentWindow) return;
-    if (!e.data || e.data.type !== "carmallPlugHeight") return;
-    var h = Number(e.data.height);
-    if (!(h > 0) || h > 5000) return;
-    // Drop the pre-load placeholder so the frame can shrink back down as well as grow.
-    f.style.minHeight = "0px";
-    f.style.height = h + "px";
+    // Only this frame may talk to the page. Without these checks any other frame or
+    // opened window could resize the storefront or rewrite its address bar.
+    if (e.origin !== ORIGIN || e.source !== f.contentWindow || !e.data) return;
+    var d = e.data;
+    if (TYPES.indexOf(d.type) >= 0) {
+      var h = Number(d.height);
+      if (!(h > 0) || h > 5000) return;
+      // Drop the pre-load placeholder so the frame can shrink back down as well as grow.
+      f.style.minHeight = "0px";
+      f.style.height = h + "px";
+      return;
+    }
+    if (d.type === "carmallFinderState") {
+      // Mirror the finder's picks into this page's address bar, so it can be copied,
+      // shared, or reloaded. Empty finder = back on the hub = no #hash at all.
+      var key = pathFor(d.finder) ? d.finder : "", hash = "";
+      if (key) {
+        var st = clean(new URLSearchParams(typeof d.state === "string" ? d.state : ""));
+        hash = "#f=" + key + (st ? "&" + st : "");
+      }
+      if (hash === location.hash) return;
+      // Clearing only ever removes our own #f=…; any other anchor on the page stays.
+      if (!hash && !/^#f=/.test(location.hash)) return;
+      opened = hash;
+      try { history.replaceState(history.state, "", location.pathname + location.search + hash); } catch (err) {}
+    }
   });
+
+  // Hub -> finder -> back all happen inside the frame, and only this page can scroll
+  // itself. If the frame's top has scrolled out of view (tapping a card low on a phone
+  // screen), bring it back so the new screen starts at its heading, not halfway down.
+  // Each load also tells the frame which page it sits on, so its share button can link
+  // here (not to the bare github.io page). ?query is left out: utm tags stay with the
+  // visit they came from instead of riding along on every shared link.
+  var loads = 0;
+  f.addEventListener("load", function () {
+    try {
+      f.contentWindow.postMessage({ type: "carmallHost", url: location.origin + location.pathname }, ORIGIN);
+    } catch (e) {}
+    loads += 1;
+    if (loads === 1) return;            // the first load is the page opening normally
+    var top = f.getBoundingClientRect().top;
+    if (top < 0) window.scrollTo(0, Math.max(0, (window.pageYOffset || 0) + top - 80));
+  });
+
+  // A link to this same page with a different #f=… (pasted into the bar, or a link on the
+  // page) changes only the hash, so nothing reloads — reopen the frame. Other anchors on
+  // the store page (#top and the like) are left alone.
+  window.addEventListener("hashchange", function () {
+    if (location.hash === opened || !readHash().get("f")) return;
+    open();
+  });
+
+  open();
 })();
 </script>
 <!-- ===== 結束 ===== -->
