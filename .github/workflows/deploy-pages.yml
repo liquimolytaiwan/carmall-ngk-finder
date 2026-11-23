@@ -23,6 +23,15 @@ on:
     types: [completed]
     branches: [main]
   workflow_dispatch:
+    inputs:
+      simulate_missing_artifact:
+        # Test hook for the retry below. GitHub's glitch can't be triggered on purpose, so
+        # this makes the first attempt ask for an artifact name that doesn't exist — the
+        # same "No artifacts named ..." throw in deploy-pages — and the retry then deploys
+        # the real one. Push, schedule and workflow_run runs have no inputs, so it's off.
+        description: "Test only: fail the first deploy attempt to exercise the retry"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -42,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
 
@@ -65,10 +74,36 @@ jobs:
           path: .
       - id: deployment
         uses: actions/deploy-pages@v4
+        # GitHub sometimes reports `No artifacts named "github-pages"` for an artifact the
+        # step above uploaded successfully (carmall-parts-finder twice on 2026-11-22, this
+        # repo on 2026-11-23). A fresh run always deployed fine, and a re-run of the same
+        # run later counted 2 artifacts, so the run's artifact list does catch up — just
+        # not within the ~0.5s between upload and deploy. A failed attempt here moves on to
+        # the retry below instead of ending the run red (and emailing a failure).
+        continue-on-error: true
         with:
+          artifact_name: ${{ inputs.simulate_missing_artifact && 'no-such-artifact-retry-test' || 'github-pages' }}
           # GitHub's Pages deployment queue backed up badly on 2026-08-06: the action's
           # default 10-minute wait expired twice while the deployment itself went on to
           # succeed server-side. That produces a red build for a deploy that actually
           # shipped — which is worse than a slow one, because the next person reads the
           # red and re-runs, or worse, stops trusting the signal.
+          timeout: 1200000
+
+      - name: Wait before retrying the deploy
+        if: steps.deployment.outcome == 'failure'
+        # Nothing shows how long the artifact list takes to catch up, and this wait only
+        # costs time on a run that would otherwise have failed, so it is generous. The
+        # warning keeps a healed glitch visible on what is now a green run.
+        run: |
+          echo "::warning::First deploy attempt failed; retrying in 3 minutes (see the step above for the error)"
+          sleep 180
+
+      - id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
+        # Deploy again from the artifact already uploaded — never re-upload: a second
+        # upload in the same run makes deploy-pages fail with "Multiple artifacts named
+        # github-pages". No continue-on-error here, so failing twice still ends red.
+        uses: actions/deploy-pages@v4
+        with:
           timeout: 1200000
